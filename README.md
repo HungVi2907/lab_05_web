@@ -1,7 +1,7 @@
 # Lab 05 - Module 5: Advanced React Patterns & Optimization
 
 **MSSV:** 23251776  
-**Họ tên:** Trần Hùng Vỹ  
+**Họ tên:** Tran Hung Vi  
 **Môn:** Web Application Development
 
 ---
