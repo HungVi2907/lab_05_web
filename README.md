@@ -1,46 +1,46 @@
 # Lab 05 - Module 5: Advanced React Patterns & Optimization
 
-**MSSV:** 23251776  
-**Họ tên:** Tran Hung Vi  
-**Môn:** Web Application Development
+**Student ID:** 23251776  
+**Full Name:** Tran Hung Vi  
+**Course:** Web Application Development
 
 ---
 
-## 📋 Tổng Quan
+## 📋 Overview
 
-Project này bao gồm **20 bài tập** (10 bài thực hành + 10 bài Capstone) về các kỹ thuật nâng cao trong React:
+This project includes **20 exercises** (10 practical exercises + 10 Capstone exercises) covering advanced React techniques:
 
-- **State Management** với useReducer và Redux Toolkit
-- **Performance Optimization** với useMemo, useCallback, Code Splitting
+- **State Management** with useReducer and Redux Toolkit
+- **Performance Optimization** with useMemo, useCallback, Code Splitting
 - **Design Patterns**: Compound Components, Portal, Error Boundary
-- **Testing**: Integration Testing với React Testing Library
+- **Testing**: Integration Testing with React Testing Library
 
 ---
 
-## 🚀 Cài Đặt & Chạy
+## 🚀 Installation & Running
 
 ```bash
-# Cài đặt dependencies
+# Install dependencies
 npm install
 
-# Chạy development server
+# Run development server
 npm start
 
-# Chạy tests
+# Run tests
 npm test
 
-# Build production
+# Build for production
 npm run build
 ```
 
 ---
 
-## 📁 Cấu Trúc Project
+## 📁 Project Structure
 
 ```
 src/
-├── exercises/                    # 10 bài tập thực hành
-│   ├── A1-useReducer-FSM/       # State Machine với useReducer
+├── exercises/                    # 10 practical exercises
+│   ├── A1-useReducer-FSM/       # State Machine with useReducer
 │   ├── A2-Redux-cartSlice/      # Redux Toolkit slice
 │   ├── B1-useMemo-optimization/ # useMemo & React.memo
 │   ├── B2-useCallback/          # useCallback optimization
@@ -51,7 +51,7 @@ src/
 │   ├── D1-IntegrationTesting/   # Integration Tests
 │   └── D2-TestingErrorBoundary/ # Error Boundary Tests
 │
-├── capstone/                     # 10 bài Capstone Project
+├── capstone/                     # 10 Capstone Project exercises
 │   ├── store/                   # E1: Redux Store Setup
 │   │   ├── index.ts
 │   │   └── slices/
@@ -71,21 +71,21 @@ src/
 │   └── tests/
 │       └── integration.test.ts  # E10: Integration Tests
 │
-├── App.tsx                      # Main App với Routing
+├── App.tsx                      # Main App with Routing
 ├── index.tsx                    # Entry Point
 └── index.css                    # Global Styles
 ```
 
 ---
 
-## 📚 Chi Tiết Bài Tập
+## 📚 Exercise Details
 
 ### Group A: State Management
 
 #### A1: useReducer Finite State Machine
 - File: `src/exercises/A1-useReducer-FSM/UserList.tsx`
-- Pattern: FSM với states: `idle` → `loading` → `success`/`failure`
-- Demo: Fetch users với proper state transitions
+- Pattern: FSM with states: `idle` → `loading` → `success`/`failure`
+- Demo: Fetch users with proper state transitions
 
 #### A2: Redux Toolkit cartSlice
 - File: `src/exercises/A2-Redux-cartSlice/`
@@ -96,17 +96,17 @@ src/
 
 #### B1: useMemo Optimization
 - File: `src/exercises/B1-useMemo-optimization/LaggyList.tsx`
-- Demo: 10,000 items với expensive sorting
+- Demo: 10,000 items with expensive sorting
 - Techniques: `useMemo`, `React.memo`
 
 #### B2: useCallback
 - File: `src/exercises/B2-useCallback/TodoList.tsx`
-- Demo: Todo list với stable callbacks
+- Demo: Todo list with stable callbacks
 - Prevents unnecessary re-renders
 
 #### B3: Code Splitting
 - File: `src/exercises/B3-CodeSplitting/CodeSplitting.tsx`
-- Route-based splitting với `React.lazy`
+- Route-based splitting with `React.lazy`
 - `Suspense` fallback loading
 
 ### Group C: Design Patterns
@@ -118,7 +118,7 @@ src/
 
 #### C2: Portal Modal
 - File: `src/exercises/C2-PortalModal/Modal.tsx`
-- `createPortal` để render ngoài DOM tree
+- `createPortal` to render outside DOM tree
 - Proper focus management
 
 #### C3: Error Boundary
@@ -130,7 +130,7 @@ src/
 
 #### D1: Integration Testing
 - Files: `src/exercises/D1-IntegrationTesting/`
-- Full login form với async submission
+- Full login form with async submission
 - Comprehensive RTL tests
 
 #### D2: Testing Error Boundaries
@@ -143,41 +143,41 @@ src/
 ## 🏆 Capstone Project
 
 ### E1: Redux Store Setup
-- Configured store với 4 slices: auth, inventory, ui, cart
+- Configured store with 4 slices: auth, inventory, ui, cart
 - Typed hooks: `useAppDispatch`, `useAppSelector`
 
 ### E2: Authentication & Protected Routing
-- `authSlice` với login/logout async thunks
-- `PrivateRoute` component với role-based access
+- `authSlice` with login/logout async thunks
+- `PrivateRoute` component with role-based access
 
 ### E3: Entity Adapter
-- `inventorySlice` với `createEntityAdapter`
-- Normalized state cho 5000+ products
+- `inventorySlice` with `createEntityAdapter`
+- Normalized state for 5000+ products
 
 ### E4: Async Thunks
 - `fetchInventory`, `addProduct`, `updateProduct`, `deleteProduct`
 - Loading states & error handling
 
 ### E5: Optimization Pass
-- `InventoryPage` với full optimization:
-  - `useMemo` cho filtering/sorting
-  - `useCallback` cho handlers
-  - `React.memo` cho ProductRow
+- `InventoryPage` with full optimization:
+  - `useMemo` for filtering/sorting
+  - `useCallback` for handlers
+  - `React.memo` for ProductRow
 
 ### E6: Lazy Loading
 - `AnalyticsPage` lazy loaded
 - Suspense fallback
 
 ### E7: Compound DataTable
-- Flexible table với Column registration
+- Flexible table with Column registration
 - Context-based pattern
 
 ### E8: Portal Delete Modal
-- `DeleteConfirmModal` với Portal
+- `DeleteConfirmModal` with Portal
 - Reusable confirmation dialog
 
 ### E9: Error Boundary
-- Error boundary wrapper cho Analytics
+- Error boundary wrapper for Analytics
 - Graceful error handling
 
 ### E10: Testing
@@ -196,7 +196,7 @@ User:  user@example.com / user123
 
 ---
 
-## 📖 Tài Liệu Tham Khảo
+## 📖 References
 
 - [React Documentation](https://react.dev/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
@@ -205,7 +205,7 @@ User:  user@example.com / user123
 
 ---
 
-## ✅ Checklist Bài Nộp
+## ✅ Submission Checklist
 
 - [x] A1: useReducer FSM
 - [x] A2: Redux cartSlice
@@ -219,4 +219,4 @@ User:  user@example.com / user123
 - [x] D2: Testing Error Boundaries
 - [x] E1-E10: Capstone Project
 
-**Tổng: 20/20 bài tập hoàn thành**
+**Total: 20/20 exercises completed**
